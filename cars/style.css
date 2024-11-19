@@ -1,0 +1,118 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-size: 27px;
+  text-transform: uppercase;
+  background-color:  #EAE0C8;
+  color:  #594f38;
+  overflow: hidden;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 152%;
+  /* 36.48px */
+  letter-spacing: 3.84px;
+  text-transform: uppercase;
+}
+.caption {
+  color :#6b5f44;
+  text-transform: lowercase;
+  font-family: Allura;
+  text-align: center;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 1.2px;
+}
+h2 {
+  /* Header 2 */
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 152%;
+  /* 36.48px */
+  letter-spacing: 3.84px;
+  text-transform: uppercase;
+}
+header {
+  width: 100%;
+}
+nav {
+  padding: 40px 60px;
+  display: flex;
+  justify-content: flex-end;
+}
+ul {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+ul li {
+  list-style: none;
+  cursor: pointer;
+}
+div {
+  text-align: center;
+}
+section {
+  padding: 50px;
+}
+
+.car {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+}
+
+.cars {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0;
+}
+.cars-gallery {
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 80px;
+  padding: 50px;
+}
+.cars-gallery img {
+  border-radius: 30px;
+  width: 410px;
+  height: 610px;
+}
+.cars button {
+  cursor: pointer;
+  background: none;
+  display: flex;
+  width: 70px;
+  height: 70px;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+
+button img {
+  padding: 30px;
+border: 1px solid;
+border-radius: 50px;
+}
+
+button:hover {
+  
+}
