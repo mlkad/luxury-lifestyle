@@ -6,12 +6,11 @@
 
 body {
   width: 100%;
-  height: 100vh;
-  font-size: 27px;
+  height: auto;
+  font-size: 14px;
   text-transform: uppercase;
   background-color:  #EAE0C8;
   color:  #594f38;
-  overflow: hidden;
 }
 a {
   text-decoration: none;
@@ -28,7 +27,7 @@ a {
   text-transform: lowercase;
   font-family: Allura;
   text-align: center;
-  font-size: 45px;
+  font-size: 23px;
   font-style: normal;
   font-weight: 400;
   line-height: 100%;
@@ -36,7 +35,7 @@ a {
 }
 h2 {
   /* Header 2 */
-  font-size: 40px;
+  font-size: 23px;
   font-style: normal;
   font-weight: 500;
   line-height: 152%;
@@ -80,7 +79,7 @@ section {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding: 100px 0;
+  padding: 80px 0;
 }
 .cars-gallery {
   justify-content: center;
@@ -89,30 +88,47 @@ section {
   align-items: center;
   flex-wrap: wrap;
   gap: 80px;
-  padding: 50px;
+  padding: 40px;
 }
 .cars-gallery img {
   border-radius: 30px;
-  width: 410px;
-  height: 610px;
+  width: 200px;
+  height: 300px;
 }
-.cars button {
+button {
+  border-radius: 50px;
+  transition: 0.8s;
+  background-color: #c5b99c!important;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+button i {
+  padding: 20px;
+border-radius: 50px;
+}
+
+button:hover {
+  color: #c5b99c;
+  background-color:#594f38 !important;
+}
+ button:hover i {
+  color: #c5b99c !important;
+}
+ button {
   cursor: pointer;
   background: none;
   display: flex;
-  width: 70px;
-  height: 70px;
   justify-content: center;
   align-items: center;
   border: none;
 }
 
-button img {
-  padding: 30px;
-border: 1px solid;
-border-radius: 50px;
-}
 
-button:hover {
-  
+footer {
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
 }

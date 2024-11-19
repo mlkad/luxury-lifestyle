@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const prevButton = document.querySelector(".pagination .prev");
   const nextButton = document.querySelector(".pagination .next");
 
-  // Функция для случайного перемешивания массива
+
   function shuffle(array) {
     for (let i = array.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
@@ -25,17 +25,17 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  // Функция для отображения изображений на текущей странице
+ 
   function displayImages(page) {
-    // Сначала перемешиваем все изображения
+
     const shuffledImages = [...allImages];
     shuffle(shuffledImages);
 
-    // Выбираем только те изображения, которые должны быть на текущей странице
+    
     const startIndex = (page - 1) * imagesPerPage;
     const selectedImages = shuffledImages.slice(startIndex, startIndex + imagesPerPage);
 
-    // Очищаем галерею и добавляем новые изображения
+  
     gallery.innerHTML = "";
     selectedImages.forEach(image => {
       const img = document.createElement("img");
@@ -44,12 +44,10 @@ document.addEventListener("DOMContentLoaded", function () {
       gallery.appendChild(img);
     });
 
-    // Обновляем активную кнопку
     buttons.forEach(btn => btn.classList.remove("active"));
     document.querySelector(`.pagination .page[data-page="${page}"]`).classList.add("active");
   }
 
-  // Слушатели событий для кнопок пагинации
   buttons.forEach(button => {
     button.addEventListener("click", function () {
       currentPage = parseInt(button.getAttribute("data-page"));
@@ -57,7 +55,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // Слушатели событий для кнопок "Prev" и "Next"
   prevButton.addEventListener("click", function () {
     if (currentPage > 1) {
       currentPage--;
